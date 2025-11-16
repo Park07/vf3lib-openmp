@@ -4,7 +4,6 @@
  * @date   24/10/2017
  * @brief  Declaration of the matching engine.
  */
-#pragma omp atomic
 #ifndef MATCH_H
 #define MATCH_H
 
