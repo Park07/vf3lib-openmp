@@ -31,6 +31,7 @@ private:
     std::stack<T> data_stack;
     omp_lock_t stack_lock;
     std::atomic<size_t> count;
+    static constexpr size_t MAX_STACK_SIZE = 50000;
 
 public:
     OpenMPStack() : count(0) {
@@ -42,6 +43,10 @@ public:
     }
 
     void push(T const& data) {
+        while (count.load() > MAX_STACK_SIZE) {
+            usleep(100);
+        }
+        
         omp_set_lock(&stack_lock);
         data_stack.push(data);
         count++;
@@ -103,7 +108,6 @@ protected:
         return globalStateStack->size();
     }
 
-    // FIXED: Use pthread's exact termination logic
     void Run(ThreadId thread_id) {
         VFState* s = NULL;
         

@@ -1,0 +1,4 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,Status
+sparse,8,1,,,,,,TIMEOUT
+sparse,8,8,,,,,,TIMEOUT
+sparse,8,16,,,,,,TIMEOUT
