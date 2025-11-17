@@ -4,8 +4,12 @@
 #include <omp.h>
 #include <vector>
 #include <stack>
-#include <atomic>
+#include <memory>
 #include <cstdint>
+#include <fstream>
+#include <sstream>
+#include <iomanip>
+#include <chrono>
 
 #ifndef WIN32
 #include <unistd.h>
@@ -25,43 +29,101 @@ namespace vflib {
 typedef unsigned short ThreadId;
 constexpr ThreadId NULL_THREAD = (std::numeric_limits<ThreadId>::max)();
 
+// Debug logging utility
+class DebugLogger {
+private:
+    static std::ofstream* debug_file;
+    static omp_lock_t log_lock;
+    static bool initialized;
+
+public:
+    static void Initialize(const std::string& filename) {
+        if (!initialized) {
+            omp_init_lock(&log_lock);
+            debug_file = new std::ofstream(filename, std::ios::out | std::ios::trunc);
+            initialized = true;
+            *debug_file << "=== OpenMP Debug Log ===" << std::endl;
+            *debug_file << "Timestamp,ThreadID,Function,Message" << std::endl;
+        }
+    }
+
+    static void Log(const std::string& function, const std::string& message) {
+        if (!initialized || !debug_file) return;
+
+        omp_set_lock(&log_lock);
+        
+        struct timeval tv;
+        gettimeofday(&tv, NULL);
+        
+        *debug_file << tv.tv_sec << "." << std::setfill('0') << std::setw(6) << tv.tv_usec
+                   << "," << omp_get_thread_num()
+                   << "," << function
+                   << "," << message << std::endl;
+        debug_file->flush();
+        
+        omp_unset_lock(&log_lock);
+    }
+
+    static void Close() {
+        if (initialized && debug_file) {
+            debug_file->close();
+            delete debug_file;
+            debug_file = nullptr;
+            omp_destroy_lock(&log_lock);
+            initialized = false;
+        }
+    }
+};
+
+// Initialize static members
+std::ofstream* DebugLogger::debug_file = nullptr;
+omp_lock_t DebugLogger::log_lock;
+bool DebugLogger::initialized = false;
+
+// OpenMP Stack
 template<typename T>
 class OpenMPStack : public Stack<T> {
 private:
-    std::stack<T> data_stack;
-    omp_lock_t stack_lock;
-    std::atomic<size_t> count;
+    std::stack<std::shared_ptr<T>> data_stack;
+    size_t count;
 
 public:
     OpenMPStack() : count(0) {
-        omp_init_lock(&stack_lock);
+        DebugLogger::Log("OpenMPStack", "Constructor");
     }
 
     ~OpenMPStack() {
-        omp_destroy_lock(&stack_lock);
+        DebugLogger::Log("OpenMPStack", "Destructor - remaining: " + std::to_string(count));
     }
 
     void push(T const& data) {
-        omp_set_lock(&stack_lock);
-        data_stack.push(data);
-        count++;
-        omp_unset_lock(&stack_lock);
+        #pragma omp critical(stack_access)
+        {
+            data_stack.push(std::make_shared<T>(data));
+            count++;
+        }
     }
 
-    T pop() {
-        T res = nullptr;
-        omp_set_lock(&stack_lock);
-        if (!data_stack.empty()) {
-            res = data_stack.top();
-            data_stack.pop();
-            count--;
+    std::shared_ptr<T> pop() {
+        std::shared_ptr<T> res;
+        #pragma omp critical(stack_access)
+        {
+            if (!data_stack.empty()) {
+                res = data_stack.top();
+                data_stack.pop();
+                count--;
+            }
         }
-        omp_unset_lock(&stack_lock);
         return res;
     }
 
     size_t size() {
-        return count.load();
+        size_t result;
+        #pragma omp critical(stack_access)
+        {
+            result = count;
+        }
+        return result;
     }
 };
 
@@ -79,11 +141,13 @@ protected:
     struct timeval pool_time;
     struct timeval exit_time;
     struct timeval eos_time;
+    std::vector<struct timeval> thEndOfSearchTime;
 
     bool once;
+    int16_t endThreadCount;
     int16_t cpu;
     int16_t numThreads;
-    std::atomic<int32_t> statesToBeExplored;
+    int32_t statesToBeExplored;
     Stack<VFState*>* globalStateStack;
 
     virtual void PreMatching(VFState* s){};
@@ -92,11 +156,16 @@ protected:
     virtual void UnprocessedState(ThreadId thread_id){};
 
     virtual void PutState(VFState* s, ThreadId thread_id) {
+        DebugLogger::Log("PutState", "Thread " + std::to_string(thread_id));
         globalStateStack->push(s);
     }
 
     virtual void GetState(VFState** res, ThreadId thread_id) {
-        *res = globalStateStack->pop();
+        *res = nullptr;
+        std::shared_ptr<VFState*> stackitem = globalStateStack->pop();
+        if(stackitem != nullptr) {
+            *res = *(stackitem.get());
+        }
     }
 
     inline unsigned GetRemainingStates() {
@@ -104,6 +173,8 @@ protected:
     }
 
     void Run(ThreadId thread_id) {
+        DebugLogger::Log("Run", "Thread " + std::to_string(thread_id) + " starting");
+        
         VFState* s = NULL;
         bool should_continue = true;
         
@@ -113,12 +184,15 @@ protected:
                 PreprocessState(thread_id);
                 ProcessState(s, thread_id);
                 
+                #pragma omp atomic
                 statesToBeExplored--;
                 
                 delete s;
                 PostprocessState(thread_id);
             } else {
-                int32_t remaining = statesToBeExplored.load();
+                int32_t remaining;
+                #pragma omp atomic read
+                remaining = statesToBeExplored;
                 
                 if (remaining <= 0) {
                     should_continue = false;
@@ -131,6 +205,8 @@ protected:
         {
             gettimeofday(&(eos_time), NULL);
         }
+        
+        DebugLogger::Log("Run", "Thread " + std::to_string(thread_id) + " exiting");
     }
 
     bool ProcessState(VFState *s, ThreadId thread_id) {
@@ -143,6 +219,7 @@ protected:
                 }
             }
 
+            #pragma omp atomic
             solCount++;
             
             if(storeSolutions) {
@@ -173,6 +250,7 @@ protected:
     }
 
     virtual void ExploreState(VFState *s, nodeID_t n1, nodeID_t n2, ThreadId thread_id) {
+        #pragma omp atomic
         statesToBeExplored++;
         
         VFState* s1 = new VFState(*s);
@@ -187,20 +265,29 @@ public:
         short int cpu = -1,
         MatchingVisitor<VFState> *visit = NULL):
         MatchingEngine<VFState>(visit, storeSolutions),
+        thEndOfSearchTime(numThreads),
         once(false),
+        endThreadCount(0),
         cpu(cpu),
         numThreads(numThreads),
         statesToBeExplored(0) {
+            
+            DebugLogger::Initialize("/tmp/openmp_debug_" + std::to_string(numThreads) + "_threads.log");
             
             globalStateStack = new OpenMPStack<VFState*>();
             
             if (cpu > -1) {
                 omp_set_num_threads(numThreads);
             }
+#ifdef DEBUG
+            std::cout << "Started Version VF3PGSS with OpenMP (DEBUG)\n";
+            std::cout << "Debug log: /tmp/openmp_debug_" << numThreads << "_threads.log\n";
+#endif
         }
 
     ~ParallelMatchingEngine() {
         delete globalStateStack;
+        DebugLogger::Close();
     }
 
     bool FindAllMatchings(VFState& s) {
@@ -214,6 +301,8 @@ public:
         
         gettimeofday(&(this->pool_time), NULL);
         
+        DebugLogger::Log("FindAllMatchings", "Launching " + std::to_string(numThreads) + " threads");
+        
         #pragma omp parallel num_threads(numThreads)
         {
             ThreadId thread_id = omp_get_thread_num();
@@ -222,6 +311,11 @@ public:
         
         gettimeofday(&(this->exit_time), NULL);
         
+#ifdef VERBOSE
+        std::cout << "Pool Started: " << GetElapsedTime(start_time, pool_time) << std::endl;
+        std::cout << "Pool Closed: " << GetElapsedTime(pool_time, eos_time) << std::endl;
+        std::cout << "Exit Time: " << GetElapsedTime(eos_time, exit_time) << std::endl;
+#endif
         return true;
     }
 
@@ -231,6 +325,7 @@ public:
 
     void ResetSolutionCounter() {
         solCount = 0;
+        endThreadCount = 0;
         once = false;
     }
 };

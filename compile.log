@@ -1,0 +1,4 @@
+g++ -std=c++11 -Wno-deprecated -O2 -I./include -o bin/vf3 main.cpp -DVF3 
+g++ -std=c++11 -Wno-deprecated -O2 -I./include -o bin/vf3l main.cpp -DVF3L 
+g++ -std=c++11 -Wno-deprecated -O2 -I./include -fopenmp -o bin/vf3p main.cpp -DVF3P -fopenmp
+g++ -std=c++11 -Wno-deprecated -O2 -I./include -fopenmp -o bin/vf3p_bio main.cpp -DVF3BIO -DVF3P -fopenmp
