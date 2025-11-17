@@ -92,11 +92,25 @@ protected:
     virtual void UnprocessedState(ThreadId thread_id){};
 
     virtual void PutState(VFState* s, ThreadId thread_id) {
-        globalStateStack->push(s);
+        // Protect the push operation
+        #pragma omp critical(GlobalStackLock)
+        {
+            globalStateStack->push(s);
+        }
     }
 
     virtual void GetState(VFState** res, ThreadId thread_id) {
-        *res = globalStateStack->pop();
+        *res = nullptr;
+        // Protect the pop operation
+        #pragma omp critical(GlobalStackLock)
+        {
+            // Note: OpenMPStack::pop returns the value (VFState*), not a shared_ptr
+            // Your OpenMPStack definition shows: T pop() { ... return res; }
+            VFState* stackitem = globalStateStack->pop();
+            if (stackitem != nullptr) {
+                *res = stackitem;
+            }
+        }
     }
 
     inline unsigned GetRemainingStates() {
@@ -107,23 +121,23 @@ protected:
         VFState* s = NULL;
         bool should_continue = true;
         int empty_count = 0;
-        
+
         while(should_continue) {
             GetState(&s, thread_id);
             if(s) {
                 empty_count = 0;
                 PreprocessState(thread_id);
                 ProcessState(s, thread_id);
-                
+
                 statesToBeExplored--;
-                
+
                 delete s;
                 PostprocessState(thread_id);
             } else {
                 empty_count++;
                 if (empty_count > 1000) {
                     int32_t remaining = statesToBeExplored.load();
-                    
+
                     if (remaining <= 0) {
                         should_continue = false;
                     }
@@ -132,7 +146,7 @@ protected:
             }
             UnprocessedState(thread_id);
         }
-        
+
         #pragma omp critical(end_time)
         {
             gettimeofday(&(eos_time), NULL);
@@ -148,9 +162,9 @@ protected:
                     gettimeofday(&(this->fist_solution_time), NULL);
                 }
             }
-
+            #pragma omp atomic update
             solCount++;
-            
+
             if(storeSolutions) {
                 #pragma omp critical(solution_storage)
                 {
@@ -159,7 +173,7 @@ protected:
                     solutions.push_back(sol);
                 }
             }
-            
+
             if (visit) {
                 return (*visit)(*s);
             }
@@ -180,14 +194,14 @@ protected:
 
     virtual void ExploreState(VFState *s, nodeID_t n1, nodeID_t n2, ThreadId thread_id) {
         statesToBeExplored++;
-        
+
         VFState* s1 = new VFState(*s);
         s1->AddPair(n1, n2);
         PutState(s1, thread_id);
     }
 
 public:
-    ParallelMatchingEngine(unsigned short int numThreads, 
+    ParallelMatchingEngine(unsigned short int numThreads,
         bool storeSolutions = false,
         bool lockFree = false,
         short int cpu = -1,
@@ -197,9 +211,9 @@ public:
         cpu(cpu),
         numThreads(numThreads),
         statesToBeExplored(0) {
-            
+
             globalStateStack = new OpenMPStack<VFState*>();
-            
+
             if (cpu > -1) {
                 omp_set_num_threads(numThreads);
             }
@@ -211,23 +225,23 @@ public:
 
     bool FindAllMatchings(VFState& s) {
         statesToBeExplored = 1;
-        
+
         PreMatching(&s);
         gettimeofday(&(this->start_time), NULL);
-        
+
         VFState* s0 = new VFState(s);
         PutState(s0, NULL_THREAD);
-        
+
         gettimeofday(&(this->pool_time), NULL);
-        
+
         #pragma omp parallel num_threads(numThreads)
         {
             ThreadId thread_id = omp_get_thread_num();
             Run(thread_id);
         }
-        
+
         gettimeofday(&(this->exit_time), NULL);
-        
+
         return true;
     }
 
