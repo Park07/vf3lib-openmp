@@ -1,5 +1,8 @@
 nohup: ignoring input
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+=================================================
+VF3PDL OPENMP - 10s SAFE MODE Benchmark
+=================================================
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 8v @ 1t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -16,7 +19,73 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4060
+	Maximum resident set size (kbytes): 4040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 255
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 8v @ 4t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 8v @ 8t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4072
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 251
@@ -30,10 +99,43 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 8v @ 4t...
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 8v @ 16t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4252
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 254
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 8v @ 32t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
   Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
@@ -52,7 +154,7 @@ Command exited with non-zero status 255
 	Maximum resident set size (kbytes): 4072
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 256
+	Minor (reclaiming a frame) page faults: 246
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -63,108 +165,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 8v @ 8t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4024
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 8v @ 16t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 3996
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 252
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 8
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 8v @ 32t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4024
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 8v @ 48t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -181,10 +184,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4084
+	Maximum resident set size (kbytes): 4192
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
+	Minor (reclaiming a frame) page faults: 256
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -195,9 +198,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 8v @ 64t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -208,29 +211,29 @@ Command exited with non-zero status 255
 	Command being timed: "timeout 10s ./bin/vf3p"
 	User time (seconds): 0.00
 	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
+	Percent of CPU this job got: 100%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4184
+	Maximum resident set size (kbytes): 4116
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 254
+	Minor (reclaiming a frame) page faults: 253
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 0
+	File system outputs: 8
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 16v @ 1t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -247,10 +250,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4084
+	Maximum resident set size (kbytes): 4128
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 251
+	Minor (reclaiming a frame) page faults: 250
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -261,43 +264,10 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 16v @ 4t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4196
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 255
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 16v @ 8t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
   Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
@@ -313,10 +283,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4152
+	Maximum resident set size (kbytes): 4120
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 252
+	Minor (reclaiming a frame) page faults: 253
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -327,10 +297,10 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 16v @ 16t...
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 16v @ 8t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
   Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
@@ -346,10 +316,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4008
+	Maximum resident set size (kbytes): 4112
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 252
+	Minor (reclaiming a frame) page faults: 255
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -360,9 +330,42 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 16v @ 16t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 253
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 16v @ 32t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -382,7 +385,7 @@ Command exited with non-zero status 255
 	Maximum resident set size (kbytes): 4068
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 251
+	Minor (reclaiming a frame) page faults: 252
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -393,9 +396,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 16v @ 48t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -412,10 +415,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4196
+	Maximum resident set size (kbytes): 4228
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 257
+	Minor (reclaiming a frame) page faults: 251
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -426,9 +429,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 16v @ 64t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -445,10 +448,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4064
+	Maximum resident set size (kbytes): 4132
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 253
+	Minor (reclaiming a frame) page faults: 254
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -459,9 +462,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 24v @ 1t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -478,7 +481,7 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4080
+	Maximum resident set size (kbytes): 4112
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 250
@@ -492,9 +495,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 24v @ 4t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -511,7 +514,40 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4088
+	Maximum resident set size (kbytes): 4128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 253
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 24v @ 8t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4104
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 254
@@ -525,42 +561,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 24v @ 8t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4000
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 251
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 8
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 24v @ 16t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -571,16 +574,16 @@ Command exited with non-zero status 255
 	Command being timed: "timeout 10s ./bin/vf3p"
 	User time (seconds): 0.00
 	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
+	Percent of CPU this job got: 80%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4008
+	Maximum resident set size (kbytes): 4120
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
+	Minor (reclaiming a frame) page faults: 249
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -591,9 +594,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 24v @ 32t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -610,10 +613,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4200
+	Maximum resident set size (kbytes): 4068
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 257
+	Minor (reclaiming a frame) page faults: 249
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -624,9 +627,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 24v @ 48t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -643,7 +646,7 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4000
+	Maximum resident set size (kbytes): 4112
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 256
@@ -657,9 +660,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 24v @ 64t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -676,7 +679,7 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4008
+	Maximum resident set size (kbytes): 4120
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 252
@@ -690,9 +693,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 32v @ 1t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -703,16 +706,16 @@ Command exited with non-zero status 255
 	Command being timed: "timeout 10s ./bin/vf3p"
 	User time (seconds): 0.00
 	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
+	Percent of CPU this job got: 100%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4000
+	Maximum resident set size (kbytes): 4252
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
+	Minor (reclaiming a frame) page faults: 251
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -723,9 +726,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 32v @ 4t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -742,23 +745,23 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4080
+	Maximum resident set size (kbytes): 4116
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 253
+	Minor (reclaiming a frame) page faults: 252
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 0
+	File system outputs: 8
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 32v @ 8t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -775,10 +778,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4068
+	Maximum resident set size (kbytes): 4128
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 251
+	Minor (reclaiming a frame) page faults: 254
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -789,10 +792,43 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 32v @ 16t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4224
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 255
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] sparse 32v @ 32t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
   Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
@@ -808,7 +844,7 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4000
+	Maximum resident set size (kbytes): 4100
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 253
@@ -822,42 +858,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] sparse 32v @ 32t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4032
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 254
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 32v @ 48t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -868,13 +871,13 @@ Command exited with non-zero status 255
 	Command being timed: "timeout 10s ./bin/vf3p"
 	User time (seconds): 0.00
 	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
+	Percent of CPU this job got: 80%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 3996
+	Maximum resident set size (kbytes): 4112
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 253
@@ -888,9 +891,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] sparse 32v @ 64t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -907,10 +910,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4136
+	Maximum resident set size (kbytes): 4128
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
+	Minor (reclaiming a frame) page faults: 251
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -921,9 +924,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_sparse_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] dense 8v @ 1t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -940,10 +943,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4028
+	Maximum resident set size (kbytes): 4224
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
+	Minor (reclaiming a frame) page faults: 252
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -954,10 +957,109 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] dense 8v @ 4t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4188
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 8v @ 8t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 8v @ 16t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4132
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 8v @ 32t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
   Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
@@ -976,699 +1078,6 @@ Command exited with non-zero status 255
 	Maximum resident set size (kbytes): 4084
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 253
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 8v @ 8t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4064
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 251
-	Voluntary context switches: 3
-	Involuntary context switches: 1
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 8v @ 16t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4076
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 8v @ 32t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4156
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 255
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 8
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 8v @ 48t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4064
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 251
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 8v @ 64t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4080
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 16v @ 1t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 3972
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 16v @ 4t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4076
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 253
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 16v @ 8t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4008
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 16v @ 16t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4132
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 255
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 16v @ 32t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4028
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 254
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 16v @ 48t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4008
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 16v @ 64t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4080
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 251
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 24v @ 1t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 3976
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 24v @ 4t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4200
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 253
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 24v @ 8t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4000
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 24v @ 16t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4136
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 254
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 24v @ 32t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4024
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 254
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 24v @ 48t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4008
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 253
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 24v @ 64t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4132
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 250
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 8
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 32v @ 1t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4028
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
-	Voluntary context switches: 3
-	Involuntary context switches: 0
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 32v @ 4t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4184
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 252
 	Voluntary context switches: 3
 	Involuntary context switches: 0
@@ -1680,43 +1089,10 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 32v @ 8t...
-vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
-  OpenMP Thread Affinity:
-  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
-  Set OMP_NUM_THREADS=<n> to override -t option
--u -s -f [graph format]
-Command exited with non-zero status 255
-	Command being timed: "timeout 10s ./bin/vf3p"
-	User time (seconds): 0.00
-	System time (seconds): 0.00
-	Percent of CPU this job got: 100%
-	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
-	Average shared text size (kbytes): 0
-	Average unshared data size (kbytes): 0
-	Average stack size (kbytes): 0
-	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4064
-	Average resident set size (kbytes): 0
-	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 254
-	Voluntary context switches: 3
-	Involuntary context switches: 1
-	Swaps: 0
-	File system inputs: 0
-	File system outputs: 0
-	Socket messages sent: 0
-	Socket messages received: 0
-	Signals delivered: 0
-	Page size (bytes): 4096
-	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
-[0/56] dense 32v @ 16t...
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 8v @ 48t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
   Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
@@ -1735,6 +1111,105 @@ Command exited with non-zero status 255
 	Maximum resident set size (kbytes): 4072
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 8v @ 64t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4192
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_8v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 16v @ 1t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4128
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 16v @ 4t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4044
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 255
 	Voluntary context switches: 3
 	Involuntary context switches: 0
@@ -1746,9 +1221,537 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 16v @ 8t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4072
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 16v @ 16t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4116
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 16v @ 32t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 16v @ 48t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4100
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 16v @ 64t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 248
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_16v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 24v @ 1t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4060
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 24v @ 4t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4124
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 24v @ 8t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 248
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 24v @ 16t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 24v @ 32t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 24v @ 48t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4192
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 255
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 24v @ 64t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4112
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 254
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_24v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 32v @ 1t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 32v @ 4t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 32v @ 8t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4044
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 249
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
+[0/56] dense 32v @ 16t...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4132
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 248
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] dense 32v @ 32t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -1765,10 +1768,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4092
+	Maximum resident set size (kbytes): 4192
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 252
+	Minor (reclaiming a frame) page faults: 255
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -1779,9 +1782,9 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] dense 32v @ 48t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -1792,13 +1795,13 @@ Command exited with non-zero status 255
 	Command being timed: "timeout 10s ./bin/vf3p"
 	User time (seconds): 0.00
 	System time (seconds): 0.00
-	Percent of CPU this job got: 80%
+	Percent of CPU this job got: 100%
 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
 	Average shared text size (kbytes): 0
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4076
+	Maximum resident set size (kbytes): 4120
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
 	Minor (reclaiming a frame) page faults: 254
@@ -1806,15 +1809,15 @@ Command exited with non-zero status 255
 	Involuntary context switches: 0
 	Swaps: 0
 	File system inputs: 0
-	File system outputs: 0
+	File system outputs: 8
 	Socket messages sent: 0
 	Socket messages received: 0
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
-./run_enron_10s_FIXED.sh: 46: test_count++: not found
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
+./run_enron_10s_SAFE.sh: 50: test_count++: not found
 [0/56] dense 32v @ 64t...
 vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
   OpenMP Thread Affinity:
@@ -1831,10 +1834,10 @@ Command exited with non-zero status 255
 	Average unshared data size (kbytes): 0
 	Average stack size (kbytes): 0
 	Average total size (kbytes): 0
-	Maximum resident set size (kbytes): 4000
+	Maximum resident set size (kbytes): 4008
 	Average resident set size (kbytes): 0
 	Major (requiring I/O) page faults: 0
-	Minor (reclaiming a frame) page faults: 249
+	Minor (reclaiming a frame) page faults: 251
 	Voluntary context switches: 3
 	Involuntary context switches: 0
 	Swaps: 0
@@ -1845,64 +1848,64 @@ Command exited with non-zero status 255
 	Signals delivered: 0
 	Page size (bytes): 4096
 	Exit status: 255
-./run_enron_10s_FIXED.sh: 60: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
-  → 0 solutions
+./run_enron_10s_SAFE.sh: 82: /home/williamp/vf3_test_enron_NEW/query_dense_32v_1_NO_LABELS.graph: Permission denied
+  → 0 solutions, 0KB, 0% CPU
 
-Complete! Results: results/enron_10s_safe_20251117_142356/enron_10s_openmp.csv
+✅ Benchmark Complete. Results in: results/enron_10s_safe_20251117_120520
 Dataset,Type,Size,Threads,TimeLimit_s,Time_s,Count,Status,MaxMemory_KB,CPU_Percent
-enron,sparse,8,1,10,10,0,OK,0,0
-enron,sparse,8,4,10,10,0,OK,0,0
-enron,sparse,8,8,10,10,0,OK,0,0
-enron,sparse,8,16,10,10,0,OK,0,0
-enron,sparse,8,32,10,10,0,OK,0,0
-enron,sparse,8,48,10,10,0,OK,0,0
-enron,sparse,8,64,10,10,0,OK,0,0
-enron,sparse,16,1,10,10,0,OK,0,0
-enron,sparse,16,4,10,10,0,OK,0,0
-enron,sparse,16,8,10,10,0,OK,0,0
-enron,sparse,16,16,10,10,0,OK,0,0
-enron,sparse,16,32,10,10,0,OK,0,0
-enron,sparse,16,48,10,10,0,OK,0,0
-enron,sparse,16,64,10,10,0,OK,0,0
-enron,sparse,24,1,10,10,0,OK,0,0
-enron,sparse,24,4,10,10,0,OK,0,0
-enron,sparse,24,8,10,10,0,OK,0,0
-enron,sparse,24,16,10,10,0,OK,0,0
-enron,sparse,24,32,10,10,0,OK,0,0
-enron,sparse,24,48,10,10,0,OK,0,0
-enron,sparse,24,64,10,10,0,OK,0,0
-enron,sparse,32,1,10,10,0,OK,0,0
-enron,sparse,32,4,10,10,0,OK,0,0
-enron,sparse,32,8,10,10,0,OK,0,0
-enron,sparse,32,16,10,10,0,OK,0,0
-enron,sparse,32,32,10,10,0,OK,0,0
-enron,sparse,32,48,10,10,0,OK,0,0
-enron,sparse,32,64,10,10,0,OK,0,0
-enron,dense,8,1,10,10,0,OK,0,0
-enron,dense,8,4,10,10,0,OK,0,0
-enron,dense,8,8,10,10,0,OK,0,0
-enron,dense,8,16,10,10,0,OK,0,0
-enron,dense,8,32,10,10,0,OK,0,0
-enron,dense,8,48,10,10,0,OK,0,0
-enron,dense,8,64,10,10,0,OK,0,0
-enron,dense,16,1,10,10,0,OK,0,0
-enron,dense,16,4,10,10,0,OK,0,0
-enron,dense,16,8,10,10,0,OK,0,0
-enron,dense,16,16,10,10,0,OK,0,0
-enron,dense,16,32,10,10,0,OK,0,0
-enron,dense,16,48,10,10,0,OK,0,0
-enron,dense,16,64,10,10,0,OK,0,0
-enron,dense,24,1,10,10,0,OK,0,0
-enron,dense,24,4,10,10,0,OK,0,0
-enron,dense,24,8,10,10,0,OK,0,0
-enron,dense,24,16,10,10,0,OK,0,0
-enron,dense,24,32,10,10,0,OK,0,0
-enron,dense,24,48,10,10,0,OK,0,0
-enron,dense,24,64,10,10,0,OK,0,0
-enron,dense,32,1,10,10,0,OK,0,0
-enron,dense,32,4,10,10,0,OK,0,0
-enron,dense,32,8,10,10,0,OK,0,0
-enron,dense,32,16,10,10,0,OK,0,0
-enron,dense,32,32,10,10,0,OK,0,0
-enron,dense,32,48,10,10,0,OK,0,0
-enron,dense,32,64,10,10,0,OK,0,0
+enron,sparse,8,1,10,.012598213,0,OK,0,0
+enron,sparse,8,4,10,.011794228,0,OK,0,0
+enron,sparse,8,8,10,.012538548,0,OK,0,0
+enron,sparse,8,16,10,.011863049,0,OK,0,0
+enron,sparse,8,32,10,.011672982,0,OK,0,0
+enron,sparse,8,48,10,.011640498,0,OK,0,0
+enron,sparse,8,64,10,.011762985,0,OK,0,0
+enron,sparse,16,1,10,.011900239,0,OK,0,0
+enron,sparse,16,4,10,.012118009,0,OK,0,0
+enron,sparse,16,8,10,.011868615,0,OK,0,0
+enron,sparse,16,16,10,.012166212,0,OK,0,0
+enron,sparse,16,32,10,.011770995,0,OK,0,0
+enron,sparse,16,48,10,.011970726,0,OK,0,0
+enron,sparse,16,64,10,.011975429,0,OK,0,0
+enron,sparse,24,1,10,.011741425,0,OK,0,0
+enron,sparse,24,4,10,.011805827,0,OK,0,0
+enron,sparse,24,8,10,.011948811,0,OK,0,0
+enron,sparse,24,16,10,.011673056,0,OK,0,0
+enron,sparse,24,32,10,.011975396,0,OK,0,0
+enron,sparse,24,48,10,.011795269,0,OK,0,0
+enron,sparse,24,64,10,.012204362,0,OK,0,0
+enron,sparse,32,1,10,.011949206,0,OK,0,0
+enron,sparse,32,4,10,.011691543,0,OK,0,0
+enron,sparse,32,8,10,.011799145,0,OK,0,0
+enron,sparse,32,16,10,.012097821,0,OK,0,0
+enron,sparse,32,32,10,.012117367,0,OK,0,0
+enron,sparse,32,48,10,.012105229,0,OK,0,0
+enron,sparse,32,64,10,.011767182,0,OK,0,0
+enron,dense,8,1,10,.012090137,0,OK,0,0
+enron,dense,8,4,10,.011875505,0,OK,0,0
+enron,dense,8,8,10,.011847180,0,OK,0,0
+enron,dense,8,16,10,.012055119,0,OK,0,0
+enron,dense,8,32,10,.012034812,0,OK,0,0
+enron,dense,8,48,10,.011824188,0,OK,0,0
+enron,dense,8,64,10,.011788011,0,OK,0,0
+enron,dense,16,1,10,.011865599,0,OK,0,0
+enron,dense,16,4,10,.011694188,0,OK,0,0
+enron,dense,16,8,10,.012086099,0,OK,0,0
+enron,dense,16,16,10,.011750965,0,OK,0,0
+enron,dense,16,32,10,.012013273,0,OK,0,0
+enron,dense,16,48,10,.011786178,0,OK,0,0
+enron,dense,16,64,10,.012121499,0,OK,0,0
+enron,dense,24,1,10,.011895134,0,OK,0,0
+enron,dense,24,4,10,.011795914,0,OK,0,0
+enron,dense,24,8,10,.011752507,0,OK,0,0
+enron,dense,24,16,10,.011865715,0,OK,0,0
+enron,dense,24,32,10,.012059116,0,OK,0,0
+enron,dense,24,48,10,.012021316,0,OK,0,0
+enron,dense,24,64,10,.011993452,0,OK,0,0
+enron,dense,32,1,10,.011990795,0,OK,0,0
+enron,dense,32,4,10,.011835310,0,OK,0,0
+enron,dense,32,8,10,.011741763,0,OK,0,0
+enron,dense,32,16,10,.011725120,0,OK,0,0
+enron,dense,32,32,10,.011982682,0,OK,0,0
+enron,dense,32,48,10,.011956376,0,OK,0,0
+enron,dense,32,64,10,.011871806,0,OK,0,0

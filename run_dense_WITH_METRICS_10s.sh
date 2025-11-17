@@ -1,0 +1,46 @@
+#!/bin/bash
+cd ~/vf3lib-openmp
+
+RESULT_DIR="results/dense_metrics_10s_$(date +%Y%m%d_%H%M%S)"
+mkdir -p "$RESULT_DIR"
+CSV="$RESULT_DIR/dense_openmp_full.csv"
+
+echo "Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,Status" > "$CSV"
+
+test_num=0
+for size in 8 16 24 32; do
+    for threads in 1 8 16 32 48 64; do
+        ((test_num++))
+        echo "[$test_num/24] dense,$size with $threads threads..."
+        
+        TIME_FILE="$RESULT_DIR/time_${size}_t${threads}.txt"
+        OUTPUT_FILE="$RESULT_DIR/output_${size}_t${threads}.txt"
+        
+        # 10 SECOND TIMEOUT
+        /usr/bin/time -v timeout 10s ./bin/vf3p \
+            ~/vf3_test_enron_NEW/query_dense_${size}v_1_NO_LABELS.graph \
+            ~/vf3_test_enron_NEW/enron_NO_LABELS.graph \
+            -a 2 -t $threads -l 0 -h 3 \
+            > "$OUTPUT_FILE" 2> "$TIME_FILE"
+        
+        COUNT=$(head -1 "$OUTPUT_FILE" | awk '{print $1}' | grep -o '^[0-9]*')
+        FIRST_TIME=$(head -1 "$OUTPUT_FILE" | awk '{print $2}')
+        TOTAL_TIME=$(head -1 "$OUTPUT_FILE" | awk '{print $3}')
+        MAX_MEM=$(grep "Maximum resident set size" "$TIME_FILE" | awk '{print $NF}')
+        CPU_PCT=$(grep "Percent of CPU" "$TIME_FILE" | awk '{print $NF}' | tr -d '%')
+        
+        [[ -z "$COUNT" ]] || ! [[ "$COUNT" =~ ^[0-9]+$ ]] && COUNT=0
+        [[ -z "$MAX_MEM" ]] && MAX_MEM=0
+        [[ -z "$CPU_PCT" ]] && CPU_PCT=0
+        [[ -z "$FIRST_TIME" ]] && FIRST_TIME=0
+        [[ -z "$TOTAL_TIME" ]] && TOTAL_TIME=10
+        
+        echo "dense,$size,$threads,$COUNT,$FIRST_TIME,$TOTAL_TIME,$MAX_MEM,$CPU_PCT,TIMEOUT" >> "$CSV"
+        echo "  -> $COUNT solutions, ${MAX_MEM}KB, ${CPU_PCT}% CPU"
+        
+        sleep 1
+    done
+done
+
+echo "Complete!"
+cat "$CSV"
