@@ -106,10 +106,12 @@ protected:
     void Run(ThreadId thread_id) {
         VFState* s = NULL;
         bool should_continue = true;
+        int empty_count = 0;
         
         while(should_continue) {
             GetState(&s, thread_id);
             if(s) {
+                empty_count = 0;
                 PreprocessState(thread_id);
                 ProcessState(s, thread_id);
                 
@@ -118,10 +120,14 @@ protected:
                 delete s;
                 PostprocessState(thread_id);
             } else {
-                int32_t remaining = statesToBeExplored.load();
-                
-                if (remaining <= 0) {
-                    should_continue = false;
+                empty_count++;
+                if (empty_count > 1000) {
+                    int32_t remaining = statesToBeExplored.load();
+                    
+                    if (remaining <= 0) {
+                        should_continue = false;
+                    }
+                    empty_count = 0;
                 }
             }
             UnprocessedState(thread_id);

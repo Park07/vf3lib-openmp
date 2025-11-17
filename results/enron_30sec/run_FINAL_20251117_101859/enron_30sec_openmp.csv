@@ -1,0 +1,4 @@
+Type,Size,Threads,Solutions,FirstTime_s,TotalTime_s,Status
+sparse,8,1,1814541,0,29.8032,TIMEOUT
+sparse,8,8,9685410,0,9685411,TIMEOUT
+sparse,8,16,29.8489,TIMEOUT,,TIMEOUT
