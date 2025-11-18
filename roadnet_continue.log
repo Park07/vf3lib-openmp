@@ -1,0 +1,696 @@
+nohup: ignoring input
+[27/46] roadNet dense,8,16...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_8v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[28/46] roadNet dense,8,32...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 66%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4092
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_8v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[29/46] roadNet dense,8,48...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 257
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_8v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[30/46] roadNet dense,8,64...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4040
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 254
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_8v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[31/46] roadNet dense,16,1...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4064
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_16v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[32/46] roadNet dense,16,8...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4160
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_16v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[33/46] roadNet dense,16,16...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4220
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 253
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_16v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[34/46] roadNet dense,16,32...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4052
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_16v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[35/46] roadNet dense,16,48...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4016
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 248
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_16v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[36/46] roadNet dense,16,64...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4096
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_16v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[37/46] roadNet dense,24,1...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4096
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 254
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_24v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[38/46] roadNet dense,24,8...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4096
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_24v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[39/46] roadNet dense,24,16...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 254
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_24v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[40/46] roadNet dense,24,32...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_24v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[41/46] roadNet dense,24,48...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_24v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[42/46] roadNet dense,24,64...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4036
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 252
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_24v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[43/46] roadNet dense,32,1...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4100
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 251
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_32v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[44/46] roadNet dense,32,8...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4176
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 258
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_32v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[45/46] roadNet dense,32,32...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4092
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 250
+	Voluntary context switches: 3
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_32v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[46/46] roadNet dense,32,48...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 83%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4176
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 255
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_32v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+[47/46] roadNet dense,32,64...
+vf3 [pattern] [target] -c [start cpu] -t [# of threads] -a [version id] -h [SSR high limit] -l [local stack limit] -k 
+  OpenMP Thread Affinity:
+  Set OMP_PROC_BIND=true and OMP_PLACES=cores for CPU affinity
+  Set OMP_NUM_THREADS=<n> to override -t option
+-u -s -f [graph format]
+Command exited with non-zero status 255
+	Command being timed: "timeout 10s ./bin/vf3p"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 80%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 4084
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 248
+	Voluntary context switches: 3
+	Involuntary context switches: 1
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 255
+./run_ROADNET_CONTINUE_FROM_27.sh: line 103: /home/williamp/vf3_test_roadnet/query_dense_32v_1_NO_LABELS.graph: Permission denied
+./run_ROADNET_CONTINUE_FROM_27.sh: line 105: /home/williamp/vf3_test_roadnet/roadNet-CA_NO_LABELS.graph: Permission denied
+  -> 0
+DONE! Check results:
+53 results/roadnet_openmp_CLEAN_20251117_192149/roadnet_openmp_complete.csv

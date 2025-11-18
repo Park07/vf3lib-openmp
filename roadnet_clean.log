@@ -1,0 +1,164 @@
+nohup: ignoring input
+[1/46] roadNet sparse,8,1...
+  -> 0
+[2/46] roadNet sparse,8,8...
+  -> 0
+[3/46] roadNet sparse,8,16...
+  -> 0
+[4/46] roadNet sparse,8,32...
+  -> 0
+[5/46] roadNet sparse,8,48...
+  -> 0
+[6/46] roadNet sparse,8,64...
+  -> 0
+[7/46] roadNet sparse,16,1...
+  -> 0
+[8/46] roadNet sparse,16,8...
+  -> 0
+[9/46] roadNet sparse,16,16...
+  -> 0
+[10/46] roadNet sparse,16,32...
+  -> 0
+[11/46] roadNet sparse,16,48...
+  -> 0
+[12/46] roadNet sparse,16,64...
+  -> 0
+[13/46] roadNet sparse,24,1...
+  -> 0
+[14/46] roadNet sparse,24,8...
+  -> 0
+[15/46] roadNet sparse,24,16...
+  -> 0
+[16/46] roadNet sparse,24,32...
+  -> 0
+[17/46] roadNet sparse,24,48...
+  -> 0
+[18/46] roadNet sparse,24,64...
+  -> 0
+[19/46] roadNet sparse,32,1...
+  -> 0
+[20/46] SKIP sparse,32,8 (test 20 - known hang)
+[21/46] roadNet sparse,32,16...
+  -> 0
+[22/46] roadNet sparse,32,32...
+  -> 0
+[23/46] roadNet sparse,32,48...
+  -> 00
+[24/46] roadNet sparse,32,64...
+  -> 0
+[25/46] roadNet dense,8,1...
+  -> 0
+[26/46] roadNet dense,8,8...
+  -> 0
+[27/46] roadNet dense,8,16...
+  -> 10688
+[28/46] roadNet dense,8,32...
+  -> 14097
+[29/46] roadNet dense,8,48...
+  -> 11241
+[30/46] roadNet dense,8,64...
+  -> 9780
+[31/46] roadNet dense,16,1...
+  -> 0
+[32/46] roadNet dense,16,8...
+  -> 1148
+[33/46] roadNet dense,16,16...
+  -> 3486
+[34/46] roadNet dense,16,32...
+  -> 1904
+[35/46] roadNet dense,16,48...
+  -> 1326
+[36/46] roadNet dense,16,64...
+  -> 1463
+[37/46] roadNet dense,24,1...
+  -> 0
+[38/46] roadNet dense,24,8...
+  -> 0
+[39/46] roadNet dense,24,16...
+  -> 00
+[40/46] roadNet dense,24,32...
+  -> 0
+[41/46] roadNet dense,24,48...
+  -> 0
+[42/46] roadNet dense,24,64...
+  -> 0
+[43/46] roadNet dense,32,1...
+  -> 0
+[44/46] roadNet dense,32,8...
+  -> 00
+[45/46] SKIP dense,32,16 (test 45 - known hang)
+[46/46] roadNet dense,32,32...
+  -> 0
+[47/46] roadNet dense,32,48...
+  -> 0
+[48/46] roadNet dense,32,64...
+  -> 0
+COMPLETE! 46/48 tests (skipped 2 hangs)
+Dataset,Type,Size,Threads,TimeLimit_s,Solutions,FirstTime_s,TotalTime_s,MaxMemory_KB,CPU_Percent,ContextSwitches,PageFaults,Status
+roadNet,sparse,8,1,10,0,0,7.66011,18360684,99,4,4612290,TIMEOUT
+roadNet,sparse,8,8,10,0,0,0,1308848,626,2725,2941522,TIMEOUT
+roadNet,sparse,8,16,10,0,0,0,1293456,1299,8366,1740129,TIMEOUT
+roadNet,sparse,8,32,10,0,0,0,1270748,2578,282,473474,TIMEOUT
+roadNet,sparse,8,48,10,0,0,8.10628,1247788,3859,6370,1395995,TIMEOUT
+roadNet,sparse,8,64,10,0,0,0,1217472,5134,2353,2419710,TIMEOUT
+roadNet,sparse,16,1,10,0,0,8.10546,19373076,99,4,4865383,TIMEOUT
+roadNet,sparse,16,8,10,0,0,0,1232604,658,11084,1532571,TIMEOUT
+roadNet,sparse,16,16,10,0,0,0,1224864,1235,10667,1387693,TIMEOUT
+roadNet,sparse,16,32,10,0,0,0,1209636,2477,2686,2584807,TIMEOUT
+roadNet,sparse,16,48,10,0,0,0,1194504,3865,2620,2615260,TIMEOUT
+roadNet,sparse,16,64,10,0,0,0,1171472,5145,2635,2280707,TIMEOUT
+roadNet,sparse,24,1,10,0,0,8.10927,19391352,99,4,4869967,TIMEOUT
+roadNet,sparse,24,8,10,0,0,0,1247760,657,6114,2539291,TIMEOUT
+roadNet,sparse,24,16,10,0,0,0,1232520,1299,3626,3108191,TIMEOUT
+roadNet,sparse,24,32,10,0,0,0,1209556,2582,3085,2903891,TIMEOUT
+roadNet,sparse,24,48,10,0,0,0,1194508,3869,3102,2664190,TIMEOUT
+roadNet,sparse,24,64,10,0,0,0,1171616,5147,3083,2535336,TIMEOUT
+roadNet,sparse,32,1,10,0,0,8.10749,19391556,100,4,4870016,TIMEOUT
+roadNet,sparse,32,16,10,0,0,8.09867,1354700,1300,9893,811506,TIMEOUT
+roadNet,sparse,32,32,10,0,0,0,1324348,2465,3861,2031361,TIMEOUT
+roadNet,sparse,32,48,10,00,0,0,1293724,3867,3451,1787173,TIMEOUT
+roadNet,sparse,32,64,10,0,0,0,1255456,5141,3890,1684197,TIMEOUT
+roadNet,dense,8,1,10,0,0,8.10259,19382728,99,4,4867807,TIMEOUT
+roadNet,dense,8,8,10,0,0,10,32500900,0,61544,21176575,TIMEOUT
+roadNet,dense,8,16,10,10688,0,7.63333,26048776,963,173912,25559840,TIMEOUT
+roadNet,dense,8,32,10,14097,0,8.08195,17185360,1757,348306,27667852,TIMEOUT
+roadNet,dense,8,48,10,11241,0,7.48186,7079168,2286,294336,14199993,TIMEOUT
+roadNet,dense,8,64,10,9780,0,7.58305,6029788,2960,327255,12249745,TIMEOUT
+roadNet,dense,8,16,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,1,10,0,0,10,6754908,99,3,1710912,TIMEOUT
+roadNet,dense,8,32,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,8,48,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,8,64,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,1,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,8,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,16,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,32,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,48,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,64,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,24,1,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,24,8,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,8,10,1148,0,1148,29873012,581,65362,20283807,TIMEOUT
+roadNet,dense,24,16,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,24,32,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,24,48,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,24,64,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,32,1,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,32,8,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,32,32,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,32,48,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,32,64,10,0,0,10,0,0,0,0,TIMEOUT
+roadNet,dense,16,16,10,3486,0,3486,22662716,985,175092,25568443,TIMEOUT
+roadNet,dense,16,32,10,1904,0,8.08448,11592348,1683,316607,22950075,TIMEOUT
+roadNet,dense,16,48,10,1326,0,8.10242,5526960,2459,282548,13909632,TIMEOUT
+roadNet,dense,16,64,10,1463,0,7.36122,5534744,2876,311813,11522299,TIMEOUT
+roadNet,dense,24,1,10,0,0,7.34449,14725276,99,4,3703436,TIMEOUT
+roadNet,dense,24,8,10,0,0,0,38616884,570,65842,20740005,TIMEOUT
+roadNet,dense,24,16,10,00,0,0,26949400,972,170000,25292177,TIMEOUT
+roadNet,dense,24,32,10,0,0,7.73039,7496992,1734,210216,18377364,TIMEOUT
+roadNet,dense,24,48,10,0,0,0,5529052,2838,182176,19834347,TIMEOUT
+roadNet,dense,24,64,10,0,0,0,4466256,3583,175814,19400147,TIMEOUT
+roadNet,dense,32,1,10,0,0,7.37698,14925460,99,4,3753471,TIMEOUT
+roadNet,dense,32,8,10,00,0,0,32220168,581,63791,20394225,TIMEOUT
+roadNet,dense,32,32,10,0,0,7.72402,7426004,1697,201782,18077754,TIMEOUT
+roadNet,dense,32,48,10,0,0,0,3892556,2834,108068,15358771,TIMEOUT
+roadNet,dense,32,64,10,0,0,0,4041868,4400,25808,15402354,TIMEOUT
