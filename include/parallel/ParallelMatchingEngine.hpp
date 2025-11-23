@@ -46,9 +46,10 @@ public:
         while (count.load() > MAX_STACK_SIZE) {
             usleep(100);
         }
-        
+
         omp_set_lock(&stack_lock);
         data_stack.push(data);
+        #pragma omp atomic
         count++;
         omp_unset_lock(&stack_lock);
     }
@@ -59,6 +60,7 @@ public:
         if (!data_stack.empty()) {
             res = data_stack.top();
             data_stack.pop();
+            #pragma omp atomic
             count--;
         }
         omp_unset_lock(&stack_lock);
@@ -110,19 +112,21 @@ protected:
 
     void Run(ThreadId thread_id) {
         VFState* s = NULL;
-        
+
         while(statesToBeExplored > 0) {
             GetState(&s, thread_id);
             if(s) {
                 PreprocessState(thread_id);
                 ProcessState(s, thread_id);
+                #pragma omp atomic
+
                 statesToBeExplored--;
                 delete s;
                 PostprocessState(thread_id);
             }
             UnprocessedState(thread_id);
         }
-        
+
         #pragma omp critical(end_time)
         {
             gettimeofday(&(eos_time), NULL);
@@ -139,8 +143,9 @@ protected:
                 }
             }
 
+            #pragma omp atomic
             solCount++;
-            
+
             if(storeSolutions) {
                 #pragma omp critical(solution_storage)
                 {
@@ -149,7 +154,7 @@ protected:
                     solutions.push_back(sol);
                 }
             }
-            
+
             if (visit) {
                 return (*visit)(*s);
             }
@@ -169,15 +174,16 @@ protected:
     }
 
     virtual void ExploreState(VFState *s, nodeID_t n1, nodeID_t n2, ThreadId thread_id) {
+        #pragma omp atomic
         statesToBeExplored++;
-        
+
         VFState* s1 = new VFState(*s);
         s1->AddPair(n1, n2);
         PutState(s1, thread_id);
     }
 
 public:
-    ParallelMatchingEngine(unsigned short int numThreads, 
+    ParallelMatchingEngine(unsigned short int numThreads,
         bool storeSolutions = false,
         bool lockFree = false,
         short int cpu = -1,
@@ -187,9 +193,9 @@ public:
         cpu(cpu),
         numThreads(numThreads),
         statesToBeExplored(0) {
-            
+
             globalStateStack = new OpenMPStack<VFState*>();
-            
+
             if (cpu > -1) {
                 omp_set_num_threads(numThreads);
             }
@@ -201,23 +207,23 @@ public:
 
     bool FindAllMatchings(VFState& s) {
         statesToBeExplored = 1;
-        
+
         PreMatching(&s);
         gettimeofday(&(this->start_time), NULL);
-        
+
         VFState* s0 = new VFState(s);
         PutState(s0, NULL_THREAD);
-        
+
         gettimeofday(&(this->pool_time), NULL);
-        
+
         #pragma omp parallel num_threads(numThreads)
         {
             ThreadId thread_id = omp_get_thread_num();
             Run(thread_id);
         }
-        
+
         gettimeofday(&(this->exit_time), NULL);
-        
+
         return true;
     }
 

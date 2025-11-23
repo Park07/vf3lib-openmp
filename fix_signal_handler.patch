@@ -1,0 +1,11 @@
+--- main.cpp.orig
++++ main.cpp
+@@ case SIGTERM:
++                        static bool already_handled = false;
++                        if (already_handled) {
++                            exit(-1);
++                        }
++                        already_handled = true;
+                         if (global_matching_engine_ptr != nullptr) {
+                                 struct timeval end_time;
+                                 gettimeofday(&end_time, NULL);

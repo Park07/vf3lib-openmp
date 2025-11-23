@@ -164,6 +164,7 @@ namespace vflib
 				trace->SetGoal();
 				#endif
 
+				#pragma omp atomic
 				solCount++;
 				if(storeSolutions)
 				{
@@ -263,6 +264,7 @@ namespace vflib
 				if(!solCount)
 					gettimeofday(&fist_solution_time, NULL);
 
+				#pragma omp atomic
 				solCount++;
 				if(storeSolutions)
 				{

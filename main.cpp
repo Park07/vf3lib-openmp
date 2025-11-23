@@ -40,6 +40,11 @@ void sig_handler(int sig) {
 			std::cout << "Aborted \n";
 			exit(-1);
 		case SIGTERM:
+                        static bool already_handled = false;
+                        if (already_handled) {
+                            exit(-1);
+                        }
+                        already_handled = true;
                         if (global_matching_engine_ptr != nullptr) {
                                 struct timeval end_time;
                                 gettimeofday(&end_time, NULL);
@@ -47,7 +52,11 @@ void sig_handler(int sig) {
                                                 (end_time.tv_usec - global_start_time.tv_usec) / 1000000.0;
                                 // Cast and get solution count using public method
                                 auto* engine = static_cast<vflib::MatchingEngine<state_t>*>(global_matching_engine_ptr);
-                                std::cout << engine->GetSolutionsCount() << " 0 " << elapsed << " TIMEOUT\n";
+								#pragma omp critical
+								{
+									std::cout << engine->GetSolutionsCount() << " 0 " << elapsed << " TIMEOUT" << std::endl;
+									std::cout.flush();
+								}
                         } else {
                                 std::cout << "Terminated \n";
                         }
@@ -213,14 +222,14 @@ int32_t main(int32_t argc, char** argv)
 			// for (auto i : sorted)
 			// 	std::cout << i << " ";
 			// std::cout << std::endl;
-			
+
 
 			#ifdef TRACE
 			me->InitTrace(outfilename);
 			#endif
-			
-			state_t s0(&patt_graph, &targ_graph, class_patt.data(), class_targ.data(), classes_count, sorted.data(), opt.edgeInduced); 
-            
+
+			state_t s0(&patt_graph, &targ_graph, class_patt.data(), class_targ.data(), classes_count, sorted.data(), opt.edgeInduced);
+
             if(opt.firstOnly)
             {
                 me->FindFirstMatching(s0);
@@ -237,7 +246,7 @@ int32_t main(int32_t argc, char** argv)
 		}
 
 	#ifndef TRACE
-		
+
 			gettimeofday(&end, NULL);
 			totalExecTime += GetElapsedTime(iter, end);
 			if(!opt.firstOnly)
@@ -245,10 +254,10 @@ int32_t main(int32_t argc, char** argv)
                 end = me->GetFirstSolutionTime();
 			    timeFirst += GetElapsedTime(iter, end);
             }
-		
+
 	} while (totalExecTime < opt.repetitionTimeLimit);
 	timeAll = totalExecTime/rep;
-	
+
     if(!opt.firstOnly)
     {
         timeFirst /= rep;
